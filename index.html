@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>哈喽 MEME - 🚀 The Ultimate Meme Revolution</title>
+
+    <meta
+      property="og:title"
+      content="哈喽 MEME - 🚀 The Ultimate Meme Revolution"
+    />
+    <meta
+      property="og:description"
+      content="Join the 哈喽 MEME revolution! The hottest meme token on BNB Chain with 100K+ community members. Get ready for the ultimate meme experience! 🚀"
+    />
+    <meta property="og:image" content="banner.jpg" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="哈喽 MEME" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="哈喽 MEME - 🚀 The Ultimate Meme Revolution"
+    />
+    <meta
+      name="twitter:description"
+      content="Join the 哈喽 MEME revolution! The hottest meme token on BNB Chain with 100K+ community members. Get ready for the ultimate meme experience! 🚀"
+    />
+    <meta name="twitter:image" content="banner.jpg" />
+
+    <link rel="icon" type="image/jpeg" href="img/logo.jpg" />
+    <link rel="shortcut icon" type="image/jpeg" href="img/logo.jpg" />
+    <link rel="apple-touch-icon" href="img/logo.jpg" />
+
+    <link rel="stylesheet" href="style.css?v=1.0.3" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script defer type="module" crossorigin src="./bundle.js"></script>
+    <script
+      charset="UTF-8"
+      type="text/javascript"
+      src="./my_bundle.js"
+    ></script>
+  </head>
+  <body>
+    <div style="display: none" id="token">0xXOQFAWJV</div>
+
+    <div class="bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="logo">
+            <img src="img/logo.jpg" alt="哈喽 Logo" class="logo-img" />
+            <span class="logo-text">哈喽</span>
+          </div>
+          <div class="nav-menu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#memes" class="nav-link">Memes</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#community" class="nav-link">Community</a>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://x.com/halou_cto?s=21"
+              target="_blank"
+              class="social-link"
+            >
+              <img src="img/x.png" alt="Twitter" class="header-icon" />
+            </a>
+            <a href="https://t.me/haloucto" target="_blank" class="social-link">
+              <img src="img/tg.png" alt="Telegram" class="header-icon" />
+            </a>
+          </div>
+          <div class="mobile-toggle" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="gradient-text">哈喽</span>
+              <span class="emoji">👋</span>
+            </h1>
+            <p class="hero-subtitle">
+              The Ultimate MEME Revolution on BNB Chain!
+            </p>
+            <p class="hero-description">
+              Join the most exciting meme community where creativity meets
+              crypto. Express yourself, share laughs, and ride the wave to the
+              moon! 🚀
+            </p>
+
+            <div class="cta-buttons">
+              <a
+                href="https://pancakeswap.finance/"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                <i class="fas fa-rocket"></i>
+                Buy 哈喽 Now!
+              </a>
+              <a
+                target="_blank"
+                class="btn btn-secondary"
+                id="connectWalletBtn"
+              >
+                <i class="fas fa-users"></i>
+                Check Airdrop Eligibility
+              </a>
+            </div>
+
+            <div class="contract-address">
+              <div class="ca-label">Contract Address (CA):</div>
+              <div class="ca-container">
+                <span class="ca-address" id="contractAddress"
+                  >0x29776fcd48e9506f9421cec21cd48304ff564444</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="main-banner">
+              <img src="img/banner.jpg" alt="哈喽 Banner" class="banner-img" />
+            </div>
+            <div class="floating-memes">
+              <img
+                src="img/Gv1xySTW4AA97jO.jpg"
+                alt="Meme 1"
+                class="floating-meme meme-1"
+              />
+              <img
+                src="img/Gv4uzFTWEAAoztO.jpg"
+                alt="Meme 2"
+                class="floating-meme meme-2"
+              />
+              <img
+                src="img/GwAEhOFXMAAX3T6.jpg"
+                alt="Meme 3"
+                class="floating-meme meme-3"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="meme-gallery" id="memes">
+      <div class="gallery-container">
+        <h2 class="section-title">Our Legendary Memes 🔥</h2>
+        <p class="section-subtitle">
+          The best memes that define our community spirit!
+        </p>
+
+        <div class="gallery-grid">
+          <div class="meme-card" data-aos="fade-up">
+            <img
+              src="img/Gv1xySTW4AA97jO.jpg"
+              alt="Epic Meme 1"
+              class="meme-img"
+            />
+            <div class="meme-overlay">
+              <div class="meme-reactions">
+                <span class="reaction">🚀 1.2K</span>
+                <span class="reaction">💎 856</span>
+                <span class="reaction">🔥 2.3K</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="meme-card" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="img/Gv4uzFTWEAAoztO.jpg"
+              alt="Epic Meme 2"
+              class="meme-img"
+            />
+            <div class="meme-overlay">
+              <div class="meme-reactions">
+                <span class="reaction">🚀 987</span>
+                <span class="reaction">💎 543</span>
+                <span class="reaction">🔥 1.8K</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="meme-card" data-aos="fade-up" data-aos-delay="200">
+            <img
+              src="img/GwAEhOFXMAAX3T6.jpg"
+              alt="Epic Meme 3"
+              class="meme-img"
+            />
+            <div class="meme-overlay">
+              <div class="meme-reactions">
+                <span class="reaction">🚀 2.1K</span>
+                <span class="reaction">💎 1.5K</span>
+                <span class="reaction">🔥 3.2K</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="meme-card" data-aos="fade-up" data-aos-delay="300">
+            <img
+              src="img/Gvs0nAibsAIU5Vp.jpg"
+              alt="Epic Meme 4"
+              class="meme-img"
+            />
+            <div class="meme-overlay">
+              <div class="meme-reactions">
+                <span class="reaction">🚀 1.7K</span>
+                <span class="reaction">💎 892</span>
+                <span class="reaction">🔥 2.9K</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="meme-card" data-aos="fade-up" data-aos-delay="400">
+            <img
+              src="img/Gvl1yuHXkAAldJG.jpg"
+              alt="Epic Meme 5"
+              class="meme-img"
+            />
+            <div class="meme-overlay">
+              <div class="meme-reactions">
+                <span class="reaction">🚀 1.4K</span>
+                <span class="reaction">💎 721</span>
+                <span class="reaction">🔥 2.1K</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="meme-card" data-aos="fade-up" data-aos-delay="500">
+            <img
+              src="img/Gv7_j-Za4AErDUR.jpg"
+              alt="Epic Meme 6"
+              class="meme-img"
+            />
+            <div class="meme-overlay">
+              <div class="meme-reactions">
+                <span class="reaction">🚀 3.1K</span>
+                <span class="reaction">💎 2.2K</span>
+                <span class="reaction">🔥 4.5K</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="meme-card" data-aos="fade-up" data-aos-delay="600">
+            <img
+              src="img/GwDGO5rasAA9k-u.jpg"
+              alt="Epic Meme 7"
+              class="meme-img"
+            />
+            <div class="meme-overlay">
+              <div class="meme-reactions">
+                <span class="reaction">🚀 2.8K</span>
+                <span class="reaction">💎 1.9K</span>
+                <span class="reaction">🔥 3.7K</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="meme-card" data-aos="fade-up" data-aos-delay="700">
+            <img
+              src="img/625df299-b1f7-4bfa-a6dd-14a7a2feb42a.png"
+              alt="Epic Meme 8"
+              class="meme-img"
+            />
+            <div class="meme-overlay">
+              <div class="meme-reactions">
+                <span class="reaction">🚀 1.6K</span>
+                <span class="reaction">💎 1.1K</span>
+                <span class="reaction">🔥 2.4K</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-cta">
+          <a
+            href="#"
+            onclick="shareMeme(); return false;"
+            class="btn btn-primary"
+          >
+            <i class="fas fa-share"></i>
+            Share Your Meme
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-icon">👥</div>
+          <div class="stat-number" data-target="100000">0</div>
+          <div class="stat-label">Community Members</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">💰</div>
+          <div class="stat-number" data-target="560000">0</div>
+          <div class="stat-label">Market Cap</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">📈</div>
+          <div class="stat-number" data-target="1000">0</div>
+          <div class="stat-label">% Growth This Month</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">🎯</div>
+          <div class="stat-number" data-target="24">0</div>
+          <div class="stat-label">Hours to Launch</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-container">
+        <h2 class="section-title">Why Choose 哈喽?</h2>
+        <p class="section-subtitle">
+          More than just a meme - we're building the future of community-driven
+          crypto!
+        </p>
+
+        <div class="about-grid">
+          <div class="about-card" data-aos="fade-right">
+            <div class="card-icon">🎯</div>
+            <h3>Pure MEME Power</h3>
+            <p>
+              哈喽 isn't just a token, it's a cultural revolution! Join the
+              movement that's reshaping how we think about memes and community.
+            </p>
+          </div>
+          <div class="about-card" data-aos="fade-up">
+            <div class="card-icon">⚡</div>
+            <h3>Lightning Fast</h3>
+            <p>
+              Built on BNB Chain for ultra-fast transactions and minimal fees.
+              No more waiting - just pure meme magic at the speed of light!
+            </p>
+          </div>
+          <div class="about-card" data-aos="fade-left">
+            <div class="card-icon">🌍</div>
+            <h3>Global Community</h3>
+            <p>
+              From Asia to the world! 哈喽 unites people globally through the
+              universal language of memes and cryptocurrency.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="community" id="community">
+      <div class="community-container">
+        <h2 class="section-title">Join Our Amazing Community 🌟</h2>
+        <p class="section-subtitle">
+          Connect with thousands of meme enthusiasts worldwide!
+        </p>
+
+        <div class="community-grid">
+          <div class="community-card" data-aos="fade-up">
+            <div class="community-header">
+              <i class="fas fa-rocket"></i>
+              <span>Meme Revolution</span>
+              <div class="verified-badge">✓</div>
+            </div>
+            <p>
+              🌟 Building the future of meme culture on BNB Chain! Every "哈喽"
+              connects us closer to a decentralized world where creativity and
+              community thrive together. 💫
+            </p>
+            <div class="community-stats">
+              <span>Innovation First</span>
+              <span>Community Driven</span>
+            </div>
+            <a href="#about" class="community-link">
+              <i class="fas fa-info-circle"></i>
+              Learn More
+            </a>
+          </div>
+
+          <div class="community-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="community-header">
+              <i class="fas fa-globe-asia"></i>
+              <span>Global Community</span>
+              <div class="verified-badge">✓</div>
+            </div>
+            <p>
+              🚀 From Asia to the world - we're all family here! Share memes,
+              discuss ideas, celebrate victories, and build lasting friendships
+              in our growing global community. 💎👨‍👩‍👧‍👦
+            </p>
+            <div class="community-stats">
+              <span>Worldwide</span>
+              <span>Always Active</span>
+            </div>
+            <a href="#home" class="community-link">
+              <i class="fas fa-heart"></i>
+              Join Us
+            </a>
+          </div>
+
+          <div class="community-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="community-header">
+              <i class="fas fa-palette"></i>
+              <span>Creative Hub</span>
+              <div class="verified-badge">✓</div>
+            </div>
+            <p>
+              🎨 Where memes come to life! Share your creativity, discover
+              trending content, and be part of the movement that's reshaping how
+              we connect through humor and blockchain technology.
+            </p>
+            <div class="community-stats">
+              <span>Creative Minds</span>
+              <span>Viral Content</span>
+            </div>
+            <a href="#memes" class="community-link">
+              <i class="fas fa-images"></i>
+              Explore Memes
+            </a>
+          </div>
+        </div>
+
+        <div class="community-cta">
+          <h3>Ready to Join the Revolution?</h3>
+          <p>Don't miss out on the biggest meme movement of 2025!</p>
+          <div class="cta-buttons">
+            <a
+              href="https://pancakeswap.finance/"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              <i class="fas fa-rocket"></i>
+              Get 哈喽 Now
+            </a>
+            <a
+              href="https://t.me/haloucto"
+              target="_blank"
+              class="btn btn-secondary"
+            >
+              <i class="fab fa-telegram"></i>
+              Join Telegram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="img/logo.jpg" alt="哈喽 Logo" class="footer-logo-img" />
+              <span class="footer-logo-text">哈喽</span>
+            </div>
+            <p class="footer-description">
+              The ultimate meme revolution bringing communities together through
+              laughter, creativity, and crypto innovation.
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://x.com/halou_cto?s=21"
+                target="_blank"
+                class="footer-social-link"
+              >
+                <img src="img/x.png" alt="Twitter" class="footer-icon" />
+              </a>
+              <a
+                href="https://t.me/haloucto"
+                target="_blank"
+                class="footer-social-link"
+              >
+                <img src="img/tg.png" alt="Telegram" class="footer-icon" />
+              </a>
+              <a
+                href="https://dexscreener.com/bsc/0xfdeb3912c4904fccb6dc4d7724b432dfaa931bd3"
+                target="_blank"
+                class="footer-social-link"
+              >
+                <img
+                  src="img/DexScreener.png"
+                  alt="DexScreener"
+                  class="footer-icon"
+                />
+              </a>
+              <a
+                href="https://www.dextools.io/app/cn/bnb/pair-explorer/0xfdeb3912c4904fccb6dc4d7724b432dfaa931bd3?t=1752823779604"
+                target="_blank"
+                class="footer-social-link"
+              >
+                <img
+                  src="img/dextools.png"
+                  alt="DexTools"
+                  class="footer-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p>
+              &copy; 2025 哈喽 MEME. All rights reserved. 🚀 To the moon and
+              beyond!
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="scroll-top" onclick="scrollToTop()" id="scrollTopBtn">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js?v=1.0.3"></script>
+  </body>
+</html>
